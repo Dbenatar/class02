@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 02 Lab 01</title>
+    <style>
+      body {
+        background-color: black;
+        background-image: url("./Images/pizza_Background.jpg");
+      }
+      h1 {
+        background-color: #ee3a43;
+        color: #009867;
+        padding: 10px;
+        margin: 5px 10px;
+        text-decoration: underline;
+        text-align: center;
+        border-radius: 5px;
+        border: 2px solid #009867;
+      }
+
+      p {
+        background-color: #fcc607;
+        color: white;
+        text-align: center;
+        border-radius: 2px;
+        margin: auto;
+        padding: 5px;
+        width: 300px;
+      }
+
+      footer {
+        color: #009867;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Class 1 Lab</h1>
+
+      <p>What base would you like on your pizza?</p>
+      <p>What vegetables would you like?</p>
+      <p>Would you like meat or vegetarian?</p>
+      <p>Would you like to make it spicy or not spicy?</p>
+    </main>
+    <footer>&copy Pizza Educators 2023</footer>
+    <script>
+      let base = prompt(
+        "What base would you like on your pizza?" +
+          "(Tomato, White, Garlic, BBQ)"
+      );
+      console.log("Your pizza will have a " + base + " base");
+
+      let vegetable = prompt("What vegetables would you like?");
+      console.log("You would like a " + base + " base" + " with " + vegetable);
+
+      let meat = prompt("Would you like meat or vegetarian?");
+      console.log(
+        "You would like a " +
+          base +
+          " base" +
+          " with " +
+          vegetable +
+          " and " +
+          meat
+      );
+
+      let spicy = prompt("Would you like to make it spicy or not spicy?");
+      console.log(
+        "You would like a " +
+          base +
+          " base" +
+          " with " +
+          vegetable +
+          " and " +
+          meat +
+          " " +
+          spicy
+      );
+
+      alert(
+        "You would like a " +
+          base +
+          " base" +
+          " with " +
+          vegetable +
+          " and " +
+          meat +
+          " " +
+          spicy
+      );
+    </script>
+  </body>
+</html>
